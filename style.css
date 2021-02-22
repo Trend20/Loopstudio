@@ -135,3 +135,72 @@ header nav ul li a{
     margin-top: 20px;
     opacity: .5;
 }
+
+/* end of banner section */
+
+
+/* creations section */
+
+.creations{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 100px;
+}
+
+.heading{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.heading h3{
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 300;
+    width: 100%;
+    margin-left: 100px; 
+}
+
+.heading button{
+    margin-right: 100px;
+    width: 15%;
+    font-family: 'Alata', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.portfolio{
+    display: grid;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 80px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+.item{
+    padding: 8px;
+    position: relative;
+}
+
+.item img{
+    background-color: #000;
+    opacity: 1;
+    background-blend-mode: overlay;
+}
+
+.item h3{
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    position: absolute;
+    top: 85%;
+    left: 10%;
+    color: #fff;
+    font-weight: 300;
+    width: 100%;
+}
+/* end of creations */
