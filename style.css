@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+
+:root{
+    --alataFont: font-family: 'Alata', sans-serif;
+    --josefinFont:  font-family: 'Josefin Sans', sans-serif;
+}
 *{
     margin: 0;
     padding: 0;
@@ -6,13 +13,14 @@
 
 body{
     font-size: 18px;
+    font-family: 'Josefin Sans', sans-serif; 
 }
 
 .container{
     display: flex;
     flex-direction: column;
     width: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 header{
@@ -24,6 +32,9 @@ header{
     align-items: center;
     padding: 30px;
     margin-top: 30px;
+    /* font-family: var(--alataFont); */
+    font-family: 'Alata', sans-serif;
+
 }
 .logo{
     display: flex;
@@ -86,3 +97,41 @@ header nav ul li a{
 
 
 /* end of hero styles */
+
+/* banner styles */
+
+.banner{
+    padding-top: 100px;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.banner img{
+    width: 50%;
+    display: flex;
+    margin-left: 100px;
+}
+
+.banner-text{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 40%;
+    background: #fff;
+    padding: 50px;
+    top: 50%;
+    left: 48%;
+}
+
+.banner-text h3{
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 300;
+    width: 100%;
+}
+
+.banner-text p{
+    margin-top: 20px;
+    opacity: .5;
+}
