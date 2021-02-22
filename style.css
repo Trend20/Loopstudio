@@ -63,6 +63,11 @@ header nav ul li{
 header nav ul li a{
     color: #fff;
     text-decoration: none;
+    padding-bottom: 7px;
+}
+
+header nav ul li a:hover{
+    border-bottom: 3px solid #fff;
 }
 
 /* end of header styles */
@@ -188,19 +193,67 @@ header nav ul li a{
 }
 
 .item img{
-    background-color: #000;
-    opacity: 1;
-    background-blend-mode: overlay;
+    filter: opacity(0.7) drop-shadow(0 0 0 #000);
 }
 
 .item h3{
     text-transform: uppercase;
     font-size: 1.3rem;
     position: absolute;
-    top: 85%;
+    top: 80%;
     left: 10%;
     color: #fff;
     font-weight: 300;
     width: 100%;
 }
 /* end of creations */
+
+
+#footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #000;
+    padding: 50px;
+    color: #fff;
+}
+.footer-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.footer-logo img{
+    margin-left: 60px;
+}
+
+.social-icons{
+    margin-right: 50px;
+    display: flex;
+    width: 10%;
+    justify-content: space-between;
+}
+
+ul{
+    margin-left: 70px;
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+
+ul li{
+    display: flex;
+    color: #fff;
+    list-style-type: none;
+}
+
+ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.footer-text{
+    margin-right: 40px;
+}
