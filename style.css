@@ -178,6 +178,11 @@ header nav ul li a:hover{
     cursor: pointer;
 }
 
+.heading button:hover{
+    background: #000;
+    color: #fff;
+}
+
 .portfolio{
     display: grid;
     margin-top: 50px;
@@ -194,6 +199,13 @@ header nav ul li a:hover{
 
 .item img{
     filter: opacity(0.7) drop-shadow(0 0 0 #000);
+    cursor: pointer;
+}
+
+.item img:hover{
+    background-color: #000;
+    opacity: .3;
+    background-blend-mode: overlay;
 }
 
 .item h3{
