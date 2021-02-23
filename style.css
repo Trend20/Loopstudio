@@ -58,12 +58,14 @@ header nav ul li{
     width: 100%;
     display: flex;
     color: #fff;
+    font-weight: 300;
 }
 
 header nav ul li a{
     color: #fff;
     text-decoration: none;
     padding-bottom: 7px;
+    font-size: .8rem;
 }
 
 header nav ul li a:hover{
@@ -77,7 +79,7 @@ header nav ul li a:hover{
 .hero{
     display: flex;
     width: 100%;
-    height: 80vh;
+    min-height: 100vh;
     position: relative;
     background-color: rgb(66, 64, 64);
     background-image: url(./images/desktop/image-hero.jpg);
@@ -253,20 +255,20 @@ header nav ul li a:hover{
     cursor: pointer;
 }
 
-ul{
+.footer-items ul{
     margin-left: 70px;
     display: flex;
     width: 40%;
     justify-content: space-between;
 }
 
-ul li{
+.footer-items ul li{
     display: flex;
     color: #fff;
     list-style-type: none;
 }
 
-ul li a{
+.footer-items ul li a{
     color: #fff;
     text-decoration: none;
     font-weight: 700;
@@ -274,4 +276,9 @@ ul li a{
 
 .footer-text{
     margin-right: 40px;
+}
+
+.footer-text p{
+    font-weight: 300;
+    font-size: .8rem;
 }
