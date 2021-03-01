@@ -12,7 +12,7 @@
 }
 
 body{
-    font-size: 18px;
+    font-size: 15px;
     font-family: 'Josefin Sans', sans-serif; 
 }
 
@@ -70,6 +70,20 @@ header nav ul li a{
 
 header nav ul li a:hover{
     border-bottom: 3px solid #fff;
+}
+
+.hamburger{
+    display: flex;
+}
+
+.hamburger i{
+    font-size: 2rem;
+    color: #fff;
+    position: absolute;
+    top: 30%;
+    right: 5%;
+    cursor: pointer;
+    display: none;
 }
 
 /* end of header styles */
