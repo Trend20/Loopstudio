@@ -190,6 +190,29 @@ header nav ul li a:hover{
     letter-spacing: 1.5px;
 }
 
+/* responsive hero */
+
+@media screen and (max-width: 991px){
+    .hero{
+        display: flex;
+        width: 100%;
+        min-height: 100vh;
+        position: relative;
+        background-color: rgb(66, 64, 64);
+        background-image: url(./images/desktop/image-hero.jpg);
+        opacity: 1;
+        background-blend-mode: overlay;
+    }
+    
+    
+    .hero h1{
+        width: 80%;
+        display: flex;
+        top: 50%;
+        left: 8%;
+    }
+    
+}
 
 /* end of hero styles */
 
@@ -231,6 +254,52 @@ header nav ul li a:hover{
     opacity: .5;
 }
 
+/* responsive banner */
+
+@media screen and (max-width: 991px){
+    .banner{
+        padding-top: 100px;
+        width: 100%;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+    }
+    
+    .banner img{
+        width: 100%;
+        display: flex;
+        margin-left: 0px;
+        padding: 30px;
+    }
+    
+    .banner-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        width: 100%;
+        background: #fff;
+        padding: 30px;
+        top: 0;
+        left: 0;
+    }
+    
+    .banner-text h3{
+        text-transform: uppercase;
+        font-size: 2rem;
+        font-weight: 300;
+        width: 100%;
+        display: flex;
+    }
+    
+    .banner-text p{
+        margin-top: 20px;
+        opacity: .5;
+        font-size: 1rem;
+    }
+}
 /* end of banner section */
 
 
@@ -307,6 +376,89 @@ header nav ul li a:hover{
     color: #fff;
     font-weight: 300;
     width: 100%;
+}
+
+/* responsiveness */
+@media screen and (max-width: 991px){
+    .creations{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-top: 100px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .heading{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .heading h3{
+        text-transform: uppercase;
+        font-size: 2rem;
+        font-weight: 300;
+        width: 100%;
+        margin-left: 0px; 
+    }
+    
+    .heading button{
+        margin-right: 0px;
+        width: 15%;
+        font-family: 'Alata', sans-serif;
+        text-transform: uppercase;
+        font-weight: 400;
+        background: none;
+        outline: none;
+        cursor: pointer;
+        position: absolute;
+        top: 500%;
+    }
+    
+    .heading button:hover{
+        background: #000;
+        color: #fff;
+    }
+    
+    .portfolio{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    
+    .item{
+        padding: 30px;
+        position: relative;
+        width: 100%;
+    }
+    
+    .item img{
+        filter: opacity(1) drop-shadow(0 0 0 #000);
+        cursor: pointer;
+        width: 100%;
+        height: 50%;
+    }
+    
+    .item img:hover{
+        background-color: #000;
+        opacity: .3;
+        background-blend-mode: overlay;
+    }
+    
+    .item h3{
+        text-transform: uppercase;
+        font-size: 1.3rem;
+        position: absolute;
+        top: 80%;
+        left: 10%;
+        color: #fff;
+        font-weight: 300;
+        width: 100%;
+    }
 }
 /* end of creations */
 
