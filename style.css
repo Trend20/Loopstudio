@@ -32,7 +32,6 @@ header{
     align-items: center;
     padding: 30px;
     margin-top: 30px;
-    /* font-family: var(--alataFont); */
     font-family: 'Alata', sans-serif;
 
 }
@@ -84,6 +83,81 @@ header nav ul li a:hover{
     right: 5%;
     cursor: pointer;
     display: none;
+}
+
+@media screen and (max-width: 991px){
+    header{
+        display: flex;
+        width: 100%;
+        /* height: 100vh;
+        background: #000; */
+        color: #fff;
+        position: absolute;
+        z-index: 10;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        margin-top: 10px;
+        font-family: 'Alata', sans-serif;
+    
+    }
+    .logo{
+        display: flex;
+        width: 30%;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10px;
+    }
+    .logo img{
+        max-width: 100%;
+    }
+    header nav{
+        display: flex;
+        width: 50%;
+        align-items: center;
+        position: absolute;
+        top: 150%;
+        display: none;
+    }
+    
+    header nav ul{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    header nav ul li{
+        width: 100%;
+        display: flex;
+        color: #fff;
+        font-weight: 500;
+    }
+    
+    header nav ul li a{
+        color: #fff;
+        text-decoration: none;
+        padding-bottom: 7px;
+        font-size: 1.3rem;
+    }
+    
+    header nav ul li a:hover{
+        border-bottom: 3px solid #fff;
+    }
+    
+    .hamburger{
+        display: flex;
+    }
+    
+    .hamburger i{
+        font-size: 2rem;
+        color: #fff;
+        position: absolute;
+        top: 30%;
+        right: 5%;
+        cursor: pointer;
+        display: block;
+    }
 }
 
 /* end of header styles */
